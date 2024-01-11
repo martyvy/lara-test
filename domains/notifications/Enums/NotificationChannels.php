@@ -1,6 +1,6 @@
 <?php
 
-namespace Domains\Sender\Enums;
+namespace Domains\Notifications\Enums;
 
 enum NotificationChannels: string
 {

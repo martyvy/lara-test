@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e78718277eae447e56721f316bf2260a",
+    "content-hash": "09bde4a02c60a10b8301ed4f95973ec1",
     "packages": [
         {
             "name": "brick/math",
@@ -1044,6 +1044,46 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "icanhazstring/symfony-console-spinner",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icanhazstring/symfony-console-spinner.git",
+                "reference": "849c91a8ac19079d6f24c6b4f46540e96df45ead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icanhazstring/symfony-console-spinner/zipball/849c91a8ac19079d6f24c6b4f46540e96df45ead",
+                "reference": "849c91a8ac19079d6f24c6b4f46540e96df45ead",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0",
+                "symfony/console": "^4.3 || ^5.0 || ^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "icanhazstring\\SymfonyConsoleSpinner\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Custom symfony progressbar spinner",
+            "keywords": [
+                "console",
+                "spinner",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/icanhazstring/symfony-console-spinner/issues",
+                "source": "https://github.com/icanhazstring/symfony-console-spinner/tree/1.1.0"
+            },
+            "time": "2023-03-23T16:36:58+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -3362,6 +3402,64 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.0"
             },
             "time": "2023-12-20T15:28:09+00:00"
+        },
+        {
+            "name": "rahul900day/laravel-console-spinner",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RahulDey12/laravel-console-spinner.git",
+                "reference": "071bf58fb33582d457219fdaa06d3727d0946e33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RahulDey12/laravel-console-spinner/zipball/071bf58fb33582d457219fdaa06d3727d0946e33",
+                "reference": "071bf58fb33582d457219fdaa06d3727d0946e33",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Rahul900Day\\LaravelConsoleSpinner\\LaravelConsoleSpinnerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rahul900Day\\LaravelConsoleSpinner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rahul Dey",
+                    "email": "rahul900day@gmail.com"
+                }
+            ],
+            "description": "Laravel Console Spinner is a spinner output for Laravel command line.",
+            "keywords": [
+                "artisan",
+                "cli",
+                "command-line",
+                "console",
+                "laravel",
+                "php",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/RahulDey12/laravel-console-spinner/issues",
+                "source": "https://github.com/RahulDey12/laravel-console-spinner/tree/1.1.1"
+            },
+            "time": "2023-02-20T04:52:54+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

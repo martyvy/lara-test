@@ -1,14 +1,18 @@
 <?php
 
-namespace Domains\Sender;
+namespace Domains\Notifications;
 
 use Illuminate\Notifications\AnonymousNotifiable;
-use JetBrains\PhpStorm\NoReturn;
 
 class Sender extends AnonymousNotifiable
 {
-    #[NoReturn] public function __construct(array $config)
+    public function __construct(array $config)
     {
         $this->route($config['provider'], $config['route']);
+    }
+
+    public function providers(): array
+    {
+        return array_keys($this->routes);
     }
 }
