@@ -1,5 +1,6 @@
 ## SetUp flow
 - Install Docker & docker-compose
+- RUN "cp .evn.example .env"
 - Run "docker-compose up --build"
 
 ## Run flow
