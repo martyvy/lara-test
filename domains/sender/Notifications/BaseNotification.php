@@ -27,9 +27,7 @@ abstract class BaseNotification extends Notification implements ShouldQueue
         public array $params,
         public string $queueName,
         public string $providerName
-    ) {
-
-    }
+    ) {}
 
     public function via(Sender $notifiable): array
     {
@@ -44,6 +42,13 @@ abstract class BaseNotification extends Notification implements ShouldQueue
     #[NoReturn] public function failed(Exception $e): void
     {
         Log::error($e);
+    }
+
+    public function toArray($notifiable)
+    {
+        return [
+            //
+        ];
     }
 
     abstract function toMail(Sender $notifiable): MailMessage;
