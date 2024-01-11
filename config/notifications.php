@@ -9,17 +9,17 @@ use NotificationChannels\Webhook\WebhookChannel;
 
 return [
     NotificationChannels::EMAIL->value => [
-        'provider' => MailChannel::class,
+        'provider' => 'mail',
         'queue' => 'nt:mail-queue',
         'route' => env('NT_EMAIL_ADDRESS')
     ],
     NotificationChannels::SMS->value => [
-        'provider' => SlackChannel::class,
+        'provider' => 'vonage',
         'queue' => 'nt:sms-queue',
         'route' => env('NT_PHONE_NUMBER')
     ],
     NotificationChannels::SLACK->value=> [
-        'provider' => VonageSmsChannel::class,
+        'provider' => 'slack',
         'queue' => 'nt:slack-queue',
         'route' => env('NT_SLACK_CHANNEL')
     ],

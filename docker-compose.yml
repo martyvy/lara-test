@@ -36,7 +36,7 @@ services:
             - '.:/var/www/html'
         networks:
             - sail
-        command: php artisan queue:listen --queue=nt:mail-queue,nt:slack-queue,nt:sms-queue,nt:microsoft-teams-queue,nt:webhook-queue
+        command: php artisan queue:listen redis --queue=nt:mail-queue,nt:slack-queue,nt:sms-queue,nt:microsoft-teams-queue,nt:webhook-queue
     redis:
         image: 'redis:alpine'
         ports:
