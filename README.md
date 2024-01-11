@@ -12,3 +12,5 @@
 
 
 All files can be found in domains/sender folder
+Mail driver set to LOG
+for all other driver .env file should be filled with corresponding variables
